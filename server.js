@@ -25,7 +25,7 @@ app.get('/api/notes', (req, res) => {
 
 
 app.post('/api/notes', (req, res) => {
-  console.info(`${req.method} request received to add a note`);
+  console.info(`${req.method} request received`);
   const { title, text } = req.body;
   if (title && text) {
     const newNote = {
@@ -42,7 +42,7 @@ app.post('/api/notes', (req, res) => {
 
     res.status(201).json(response);
   } else {
-    res.status(500).json('Error in posting note');
+    res.status(500).json('Error');
   }
 });
 

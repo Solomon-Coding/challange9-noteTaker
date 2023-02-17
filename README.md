@@ -10,8 +10,18 @@ npm init
 npm i express
 npm i uuid
 ```
-## Usage
+## Screenshot
 
+![Screen shot of index page](./public/assets/images/ss1.png)
+![Screen shot of notes page](./public/assets/images/ss2.png)
+
+## Portfolio
+
+[Link to gethub](https://github.com/Solomon-Coding/challenge9-noteTaker)
+
+## Portfolio
+
+[Link to webpage](https://radiant-garden-51312.herokuapp.com/)
 
 ## Credits
 N/A

@@ -1,15 +1,7 @@
 [
     {
-        "title": "Test Title",
-        "text": "Test text"
-    },
-    {
-        "title": "Test Title 2",
-        "text": "Test text 2"
-    },
-    {
-        "title": "fs ",
-        "text": "dn r",
-        "id": "51b6c61b-7cc7-4604-9a3f-bea7301332dd"
+        "title": "Welcome to Note Taker",
+        "text": "To add a note, select the plus in the top right. To delete a note, select the trash can icon next to the note.",
+        "id": "a92091e0-892c-4b78-801c-deefcd02a55b"
     }
 ]

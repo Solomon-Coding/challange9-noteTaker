@@ -40,11 +40,38 @@ app.post('/api/notes', (req, res) => {
       body: newNote,
     };
 
-    console.log(response);
     res.status(201).json(response);
   } else {
     res.status(500).json('Error in posting note');
   }
+});
+
+app.delete('/api/notes/:id', (req, res) => {
+
+  if(req.params.id){
+      readFromFile('./db/db.json').then((data) => {
+          const noteData = JSON.parse(data);
+  
+          for (let i = 0; i < noteData.length; i++) {
+              if (req.params.id === noteData[i].id) {                     
+                  noteData.splice(i, 1);           
+              }
+          }
+
+          writeToFile('./db/db.json', noteData);
+  
+          const response = {
+              status: 'success',
+              body: noteData,
+          };
+        
+          res.status(201).json(response);
+          
+      });
+  } else {
+      res.status(500).json('Error');
+  }
+
 });
 
 app.get('*', (req, res) => 
@@ -54,3 +81,5 @@ app.get('*', (req, res) =>
 app.listen(PORT, () =>
   console.log(`Example app listening at http://localhost:${PORT}`)
 );
+
+//

@@ -1,6 +1,7 @@
 [
     {
-        "title":"Test Title",
-        "text":"Test text"
+        "title": "Welcome to Note Taker",
+        "text": "To add a note, select the plus in the top right. To delete a note, select the trash can icon next to the note.",
+        "id": "a92091e0-892c-4b78-801c-deefcd02a55b"
     }
 ]

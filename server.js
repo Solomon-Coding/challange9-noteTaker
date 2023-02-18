@@ -82,4 +82,4 @@ app.listen(PORT, () =>
   console.log(`Example app listening at http://localhost:${PORT}`)
 );
 
-//
+// Jon Cherwin helped me figure out the delete function. lines 49-75. 
